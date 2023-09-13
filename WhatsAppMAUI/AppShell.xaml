@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="WhatsAppMAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:WhatsAppMAUI"
+    xmlns:pages="clr-namespace:WhatsAppMAUI.Pages"
+    xmlns:models="clr-namespace:WhatsAppMAUI.Models"
+    xmlns:controls="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+    Title="WhatsApp">
+
+    <TabBar>
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:ChatPage}" Title="Conversas" />
+            <ShellContent ContentTemplate="{DataTemplate pages:StatusPage}" Title="Status" />
+            <ShellContent ContentTemplate="{DataTemplate pages:CallsPage}" Title="Chamadas" />
+        </Tab>
+    </TabBar>
+
+</Shell>

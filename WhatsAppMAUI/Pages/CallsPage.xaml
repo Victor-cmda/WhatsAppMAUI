@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:WhatsAppMAUI.Models"
+             x:Class="WhatsAppMAUI.Pages.CallsPage"
+             Title="WhatsApp">
+    <VerticalStackLayout>
+        <Label 
+            Text="Página de Chamadas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="cameramenu.png" />
+        
+        <Label Text="{x:Static models:Icons.searchIcon}"
+               FontFamily="MaterialIcon"
+               Style="{x:StaticResource MaterialIcon}"
+               TextColor="White"
+               VerticalOptions="Center"
+               WidthRequest="20"
+               FontSize="Large"
+               Margin="0,0,-80,0"/>
+    </VerticalStackLayout>
+</ContentPage>
